@@ -21,6 +21,8 @@ System
 
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+Zshell & the framework for Zsh configuration (optional) [Oh My ZSH!](https://ohmyz.sh)
+
 		brew install zsh zsh-completions
 		chsh -s /bin/zsh
 		sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -32,14 +34,14 @@ Developer environment
 
 	`node --version` If not, install it with Homebrew: `brew install node`
 
-Check if it was installed properly
+Check if it was installed properly:
 
 	node --version
 	npm --version
 
 2. Yarn
 
-	brew install yarn
+	`brew install yarn`
 
 3. Git
 
@@ -48,7 +50,7 @@ Check if it was installed properly
 
 4. Get all up to date
 
-	brew update && brew upgrade && brew cleanup && brew doctor
+	`brew update && brew upgrade && brew cleanup && brew doctor`
 
 5. Docker
 
@@ -59,17 +61,17 @@ Developer tools
 
 1. IDE
 
-	brew cask install visual-studio-code
+	`brew cask install visual-studio-code`
 
 2. Browsers
 
-	brew cask install google-chrome
+	`brew cask install google-chrome`
 
-	brew cask install firefox
+	`brew cask install firefox`
 
 3. Postman
 
-	brew cask install postman
+	`brew cask install postman`
 
 Communication
 ---
