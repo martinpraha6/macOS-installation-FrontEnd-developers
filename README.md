@@ -12,7 +12,6 @@ System
 
 	- Install **Xcode** from the **AppStore**
 
-
 2. Terminal
 
 	`xcode-select --version` If the result is not a version number, install the tools with this command: `xcode-select --install`
@@ -26,6 +25,8 @@ Zshell & the framework for Zsh configuration (optional) [Oh My ZSH!](https://ohm
 		brew install zsh zsh-completions
 		chsh -s /bin/zsh
 		sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+Open  **~/.zshrc** and add some plugins `plugins=(git yarn docker npm)`
 
 Developer environment
 ---
