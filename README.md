@@ -53,7 +53,11 @@ Check if it was installed properly:
 
 	`brew update && brew upgrade && brew cleanup && brew doctor`
 
-5. Docker
+5. [Watchman](https://facebook.github.io/watchman/)
+
+	`brew install watchman`
+
+6. Docker
 
 Download and install [Docker](https://www.docker.com/)
 
