@@ -16,6 +16,8 @@ System
 
 	`xcode-select --version` If the result is not a version number, install the tools with this command: `xcode-select --install`
 
+	`sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`
+
 	`brew --version` If you don’t see a version number, install Homebrew with this command:
 
 		/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
