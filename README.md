@@ -39,8 +39,8 @@ Developer environment
 
 Check if it was installed properly:
 
-	node --version
-	npm --version
+	`node --version`
+	`npm --version`
 
 2. Yarn
 
@@ -69,6 +69,14 @@ Developer tools
 1. IDE
 
 	`brew cask install visual-studio-code`
+
+Set Visual Studio Code as your core editor:
+
+	- Launch VS Code
+
+	- Open the Command Palette `⇧⌘P` and type `shell command` to find the `Shell Command: Install 'code' command in PATH` command and run it
+
+	- Open `Terminal` and run a the command `git config --global core.editor "code --wait"` 
 
 2. Browsers
 
