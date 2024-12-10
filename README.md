@@ -14,7 +14,7 @@ You are the FrontEnd developer and you bought a new Mac. So, inspire and follow 
 
     `xcode-select --version` If the result is not a version number, install the tools with this command: `xcode-select --install`
 
-    `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`
+        sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 
     `brew --version` If you don’t see a version number, install Homebrew with this command:
 
@@ -23,81 +23,88 @@ You are the FrontEnd developer and you bought a new Mac. So, inspire and follow 
     Zshell & the framework for Zsh configuration (optional) [Oh My ZSH!](https://ohmyz.sh)
 
         brew install zsh zsh-completions
+
         chsh -s /bin/zsh
+
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-    Open `~/.zshrc` and add some plugins `plugins=(git yarn docker npm)`
+    Open `~/.zshrc` and add some plugins e.g. `plugins=(git yarn npm)`
 
 ## Developer environment
 
-1.  Node
+1.  Git
 
-    `node --version` If not, install it with Homebrew: `brew install node`
+        brew install git
 
-    Check if it was installed properly:
+2.  [NVM](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script)
 
-        `node --version`
-        `npm --version`
+        wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+     
+        export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-2.  Yarn
+    Get a version list:
+    
+        nvm ls-remote
 
-    `brew install yarn`
+    Install a specific version:
 
-3.  Git
+    `nvm install <version>` e.g.: `nvm install 22`
 
-    `git --version` If not, install it with Homebrew: `brew install git`
+4.  [Watchman](https://facebook.github.io/watchman/)
 
-4.  Get all up to date
+        brew install watchman
 
-    `brew update && brew upgrade && brew cleanup && brew doctor`
-
-5.  [Watchman](https://facebook.github.io/watchman/)
-
-    `brew install watchman`
-
-6.  Docker
-
-    Download and install [Docker](https://www.docker.com/)
-
-7.  Show hidden files in `Finder` (macOS)
+5.  Show hidden files in `Finder` (macOS)
 
     Open `Terminal` and launch:
 
     - `defaults write com.apple.finder AppleShowAllFiles NO`
     - `killall Finder /System/Library/CoreServices/Finder.app`
 
+6.  Get all up to date
+
+        brew update && brew upgrade && brew cleanup && brew doctor
+
 ## Developer tools
 
 1. IDE
 
-   `brew cask install visual-studio-code`
+        brew install visual-studio-code
 
-   Set Visual Studio Code as your core editor:
+    Set Visual Studio Code as your core editor:
 
-   - Launch VS Code
+    - Launch VS Code
 
-   - Open the Command Palette `⇧⌘P` and type `shell command` to find the `Shell Command: Install 'code' command in PATH` command and run it
+    - Open the Command Palette `⇧⌘P` and type `shell command` to find the `Shell Command: Install 'code' command in PATH` command and run it
 
-   - Open `Terminal` and run a the command `git config --global core.editor "code --wait"`
+    - Open `Terminal` and run a the command `git config --global core.editor "code --wait"`
 
-2. Browsers
 
-   `brew cask install google-chrome`
+2. Setting up Apple Silicon Macs for using package node-gyp
 
-   `brew cask install firefox`
+    - Configure node-gyp `export CXXFLAGS="-stdlib=libc++"`
 
-3. Postman
+    - Install node-gyp `npm install -g node-gyp`
 
-   `brew cask install postman`
+3. Browsers
+
+        brew install google-chrome
+
+        brew install firefox
 
 ## Communication
 
-- [Slack](https://slack.com/intl/en-cz/)
-
-- [TeamViewer](https://www.teamviewer.com/)
+- [Discord](https://discord.com/download)
 
 - [Skype](https://www.skype.com/cs/)
 
 - [Skype for business](https://products.office.com/cs-cz/skype-for-business/download-app)
+
+- [Slack](https://slack.com/intl/en-cz/)
+
+- [Teams](https://www.microsoft.com/cs-cz/microsoft-teams/download-app)
+
+- [TeamViewer](https://www.teamviewer.com/)
 
 - [Zoom](https://zoom.us)
