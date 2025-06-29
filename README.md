@@ -18,7 +18,7 @@ You are the FrontEnd developer and you bought a new Mac. So, inspire and follow 
 
     `brew --version` If you don’t see a version number, install Homebrew with this command:
 
-        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     Zshell & the framework for Zsh configuration (optional) [Oh My ZSH!](https://ohmyz.sh)
 
@@ -39,36 +39,36 @@ You are the FrontEnd developer and you bought a new Mac. So, inspire and follow 
 2.  [NVM](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script)
 
         wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-     
+
         export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
         [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
     Get a version list:
-    
+
         nvm ls-remote
 
     Install a specific version:
 
     `nvm install <version>` e.g.: `nvm install 22`
 
-4.  [Watchman](https://facebook.github.io/watchman/)
+3.  [Watchman](https://facebook.github.io/watchman/)
 
         brew install watchman
 
-5.  Show hidden files in `Finder` (macOS)
+4.  Show hidden files in `Finder` (macOS)
 
     Open `Terminal` and launch:
 
     - `defaults write com.apple.finder AppleShowAllFiles NO`
     - `killall Finder /System/Library/CoreServices/Finder.app`
 
-6.  Get all up to date
+5.  Get all up to date
 
         brew update && brew upgrade && brew cleanup && brew doctor
 
 ## Developer tools
 
-1. IDE
+1.  IDE
 
         brew install visual-studio-code
 
@@ -80,14 +80,13 @@ You are the FrontEnd developer and you bought a new Mac. So, inspire and follow 
 
     - Open `Terminal` and run a the command `git config --global core.editor "code --wait"`
 
-
-2. Setting up Apple Silicon Macs for using package node-gyp
+2.  Setting up Apple Silicon Macs for using package node-gyp
 
     - Configure node-gyp `export CXXFLAGS="-stdlib=libc++"`
 
     - Install node-gyp `npm install -g node-gyp`
 
-3. Browsers
+3.  Browsers
 
         brew install google-chrome
 
